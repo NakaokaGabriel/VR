@@ -7,15 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VR</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/benefits.css">
+  <link rel="stylesheet" href="./css/discounts.css">
+  <link rel="stylesheet" href="./css/confidence.css">
+  <link rel="stylesheet" href="./css/sides.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
 </head>
 
 <body>
-  <header class="introduction">
+  <header id="introduction">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="" alt="logo vr">
+          <img src="./assets/logo.png" class="logo" alt="logo vr">
           <h1>Só a VR tem taxa zero <br> para sua PME!</h1>
           <h3>MELHOR QUE PAGAR EM DINHEIRO</h3>
           <p>
@@ -25,9 +31,9 @@
           </p>
         </div>
         <div class="col-md-6">
-          <div class="credit__card">
-            <img src="" alt="alimentação">
-            <img src="" alt="Refeição">
+          <div class="credit-card">
+            <img src="./assets/ALIMENTACAO_CARD.png" class="card-food" alt="alimentação">
+            <img src="./assets/REFEICAO_CARD.png" class="card-meal" alt="Refeição">
           </div>
         </div>
       </div>
@@ -36,15 +42,15 @@
   <section id="benefits">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 order-1 order-sm-1 order-md-0 order-lg-0 order-xl-0">
           <h2>Por que na VR seus benefícios <br> têm mais valor?</h2>
           <div class="benefits-valor">
             <div class="benefits-item">
               <div class="row">
-                <div class="col-md-6">
-                  <img src="dolar" alt="">
+                <div class="col-md-4 align-self-center">
+                  <img src="./assets/Tarifa_Zero.png" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 align-self-center">
                   <h5>TARIFA ZERO</h5>
                   <p>Taxa Zero para a sua empresa, que já paga taxas e impostos demais.</p>
                 </div>
@@ -54,10 +60,10 @@
           <div class="benefits-valor">
             <div class="benefits-item">
               <div class="row">
-                <div class="col-md-6">
-                  <img src="dolar" alt="">
+                <div class="col-md-4 align-self-center">
+                  <img src="./assets/reclame-aqui.png" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 align-self-center">
                   <h5>MELHOR ATENDIMENTO</h5>
                   <p>Melhor nota da categoria no Reclame Aqui.</p>
                 </div>
@@ -67,10 +73,10 @@
           <div class="benefits-valor">
             <div class="benefits-item">
               <div class="row">
-                <div class="col-md-6">
-                  <img src="dolar" alt="">
+                <div class="col-md-4 align-self-center">
+                  <img src="./assets/Credito_Rapido.png" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 align-self-center">
                   <h5>CRÉDITO RÁPIDO</h5>
                   <p>O melhor prazo do mercado para ajudar no seu fluxo de caixa.</p>
                 </div>
@@ -79,41 +85,44 @@
           </div>
         </div>
         <div class="col-md-6">
-          <strong>Receba uma proposta agora</strong>
-          <p>Envie seus dados e entraremos em contato.</p>
-          <div class="benefits-form">
-            <p>Escolha uma das opções abaixo:</p>
-            <div class="benefits-choose">
-              <div class="person-type">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input type="radio" name="person-type" id="physical">
-                    <label for="physical">Pessoa Física</label>
+          <div class="benefits-box">
+            <div class="benefits-white-box">
+              <strong>Receba uma proposta agora</strong>
+              <p>Envie seus dados e entraremos em contato.</p>
+              <div class="benefits-form">
+                <p>Escolha uma das opções abaixo:</p>
+                <div class="benefits-choose">
+                  <div class="person-type">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="radio" name="person-type" id="physical">
+                        <label for="physical">Pessoa Física</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="radio" name="person-type" id="juridical">
+                        <label for="juridical">Pessoa jurídica</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <input type="radio" name="person-type" id="juridical">
-                    <label for="juridical">Pessoa jurídica</label>
+                  <div class="enterprise-type">
+                    <div class="select">
+                      <div class="value">
+                        <input type="radio" id="">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="enterprise-type">
-                <div class="select">
-                  <div class="value">
-                    <input type="radio" id="">
-
-                  </div>
-                </div>
+                <form class="form-enterprise">
+                  <input type="email" placeholder="E-mail">
+                  <input type="text" placeholder="Nome da empresa">
+                  <input type="text" placeholder="Nome do contato">
+                  <input type="tel" placeholder="Telefone comercial">
+                  <input type="tel" placeholder="Telefone celular">
+                  <input type="text" placeholder="CNPJ">
+                  <button type="submit"><strong>ACEITAR VR</strong> NO MEU ESTABELECIMENTO</button>
+                </form>
               </div>
             </div>
-            <form class="form-enterprise">
-              <input type="email" placeholder="E-mail">
-              <input type="text" placeholder="Nome da empresa">
-              <input type="text" placeholder="Nome do contato">
-              <input type="tel" placeholder="Telefone comercial">
-              <input type="tel" placeholder="Telefone celular">
-              <input type="text" placeholder="CNPJ">
-              <button type="submit"><strong>ACEITAR VR</strong> NO MEU ESTABELECIMENTO</button>
-            </form>
           </div>
         </div>
       </div>
@@ -121,12 +130,12 @@
   </section>
   <section id="discounts">
     <div class="container">
-      <h2>Com a VR Benefícios, os funcionários da sua empresa têm mais saúde</h2>
-      <p>Adquirindo Vale-Refeição ou Vale-Alimentação, <strong>seus funcionários ganham:</strong></p>
+      <h2>Com a VR Benefícios, os funcionários <br> da sua empresa têm mais saúde</h2>
+      <p class="discounts-subtitle">Adquirindo Vale-Refeição ou Vale-Alimentação, <span>seus funcionários ganham:</span></p>
       <div class="discounts-benefits">
         <div class="row">
           <div class="col-md-6">
-            <div class="discounts-box">
+            <div class="discounts-box green">
               <h5>Desconto saúde</h5>
               <div class="discounts-item">
                 <h6>Até 80%</h6>
@@ -142,32 +151,32 @@
               </div>
             </div>
             <div class="discounts-enterprises">
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-4">
-                  <img src="" alt="fleury">
+                  <img src="./assets/logo_fleury.png" alt="fleury">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="delboni">
+                  <img src="./assets/logo_delboni.png" alt="delboni">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="sabin">
+                  <img src="./assets/logo_sabin.png" alt="sabin">
                 </div>
               </div>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-4">
-                  <img src="" alt="saude na mão">
+                  <img src="./assets/logo_saude_na_mao.png" alt="saude na mão">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="portinari">
+                  <img src="./assets/logo_portinari.png" alt="portinari">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="são vincente">
+                  <img src="./assets/logo_hospital_sao_vicente.png" alt="são vincente">
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="discounts-box">
+            <div class="discounts-box pink">
               <h5>DESCONTO FARMÁCIA</h5>
               <div class="discounts-item">
                 <h6>Mínimo de 20%</h6>
@@ -183,26 +192,26 @@
               </div>
             </div>
             <div class="discounts-enterprises">
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-4">
-                  <img src="" alt="Drogaria são paulo">
+                  <img src="./assets/logo_drogariasp.png" alt="Drogaria são paulo">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="Onofre">
+                  <img src="./assets/logo_drogariaonofre.png" alt="Onofre">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="Pão de açúcar">
+                  <img src="./assets/logo_pao_de_acucar_drogaria.png" alt="Pão de açúcar">
                 </div>
               </div>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-4">
-                  <img src="" alt="Drogasil">
+                  <img src="./assets/logo_drogasil.png" alt="Drogasil">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="Panvel">
+                  <img src="./assets/logo_panvel.png" alt="Panvel">
                 </div>
                 <div class="col-4">
-                  <img src="" alt="Extra">
+                  <img src="./assets/logo_drogaria_extra.png" alt="Extra">
                 </div>
               </div>
             </div>
@@ -213,51 +222,59 @@
   </section>
   <section id="confidence">
     <div class="container">
-      <h2>Tudo isso, com a confiança da empresa que é sinônimo de categor</h2>
+      <h2>Tudo isso, com a confiança da empresa <br> que é sinônimo de categoria</h2>
       <div class="row">
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="" alt="Brasil">
-            </div>
-            <div class="col-md-6">
-              <h3>Abrangência nacional</h3>
-              <p>Mais de 280mil estabelecimentos credenciados</p>
+          <div class="confidence-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./assets/brasil.png" alt="Brasil">
+              </div>
+              <div class="col-md-9">
+                <h3>Abrangência nacional</h3>
+                <p>Mais de <strong>280mil estabelecimentos</strong> credenciados</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="" alt="Maquininha">
-            </div>
-            <div class="col-md-6">
-              <h3>A mais aceita nas maquininhas</h3>
-              <p>Cielo, Rede, GetNet, PagSeguro, Elavon e Vero</p>
+          <div class="confidence-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./assets/maquininha.png" alt="Maquininha">
+              </div>
+              <div class="col-md-9">
+                <h3 class="green">A mais aceita nas maquininhas</h3 class="green">
+                <p>Cielo, Rede, GetNet, PagSeguro, Elavon e Vero</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="" alt="Brasil">
-            </div>
-            <div class="col-md-6">
-              <h3>Tudo digital</h3>
-              <p>Gestão dos benefícios 100% online.</p>
+          <div class="confidence-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./assets/digital.png" alt="Digital">
+              </div>
+              <div class="col-md-9">
+                <h3 class="green">Tudo digital</h3>
+                <p>Gestão dos benefícios <strong>100% online.</strong></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="" alt="Maquininha">
-            </div>
-            <div class="col-md-6">
-              <h3>top of mind</h3>
-              <p>12 vezes finalista no Prêmio Top of Mind de RH.</p>
+          <div class="confidence-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./assets/top_of_mind.png" alt="Top of mind">
+              </div>
+              <div class="col-md-9">
+                <h3>top of mind</h3>
+                <p><strong>12 vezes</strong> finalista no Prêmio Top of Mind de RH.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -267,33 +284,37 @@
   <section id="sides">
     <div class="container">
       <h2>Porque não pagar em dinheiro:</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <img src="" alt="Negative">
-          <p>DINHEIRO</p>
-        </div>
-        <div class="col-md-9">
-          <ul>
-            <li>• A sua empresa paga 33% de encargos sociais (FGTS e INSS) sobre benefícios.</li>
-            <li>• Não recolher os encargos sociais implica em processo trabalhista.</li>
-          </ul>
+      <div class="sides-item">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="./assets/negative.png" alt="Negative">
+            <p>DINHEIRO</p>
+          </div>
+          <div class="col-md-10">
+            <ul>
+              <li>• A sua empresa paga 33% de encargos sociais (FGTS e INSS) sobre benefícios.</li>
+              <li>• Não recolher os encargos sociais implica em processo trabalhista.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img src="" alt="positive">
-          <p>VALE-REFEIÇÃO E VALE-ALIMENTAÇÃO</p>
-        </div>
-        <div class="col-md-9">
-          <ul>
-            <li>• Garante a alimentação do trabalhador e de sua família.</li>
-            <li>
-              • Ajuda na produtividade e integração entre os funcionários, além de estimular
-              a <strong>fidelidade da empresa.</strong>
-            </li>
-            <li>• Permite o <strong>aumento dos rendimentos</strong> sem incorporação ao salário</strong>
-            </li>
-          </ul>
+      <div class="sides-item">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="./assets/positive.png" alt="positive">
+            <p>VALE-REFEIÇÃO E VALE-ALIMENTAÇÃO</p>
+          </div>
+          <div class="col-md-10">
+            <ul>
+              <li>• Garante a alimentação do trabalhador e de sua família.</li>
+              <li>
+                • Ajuda na produtividade e integração entre os funcionários, além de estimular
+                a <strong>fidelidade da empresa.</strong>
+              </li>
+              <li>• Permite o <strong>aumento dos rendimentos</strong> sem incorporação ao salário</strong>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -301,8 +322,20 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-10">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea</p>
+        <div class="col-md-9">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+            Nulla consequat massa quis enim.
+          </p>
+          <p>
+            © 2016 VR Benefícios - Todos os direitos reservados - <a href="#">Política de Privacidade</a>
+          </p>
+        </div>
+        <div class="col-md-3 align-self-end">
+          <img src="./assets/logo.png" alt="VR logo">
         </div>
       </div>
     </div>

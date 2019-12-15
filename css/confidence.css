@@ -1,0 +1,47 @@
+section#confidence {
+  background: #f5f5f5;
+  margin-top: 30px;
+  padding: 40px 0;
+  border-bottom: 8px solid #e86c92;
+}
+
+section#confidence h2 {
+  color: #e86c92;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section#confidence .confidence-item {
+  margin-top: 60px;
+}
+
+section#confidence .confidence-item  h3 {
+  color: #ee8040;
+  font-size: 26px;
+  font: 24px 'Montserrat';
+  font-weight: bold;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+section#confidence .confidence-item h3.green {
+  color: #69d388;
+  font-size: 24px;
+}
+
+section#confidence .confidence-item p {
+  font-size: 16px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  section#confidence {
+    text-align: center;
+  }
+
+  section#confidence h2 {
+    font-size: 28px;
+  }
+}

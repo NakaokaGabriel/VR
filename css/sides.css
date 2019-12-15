@@ -1,0 +1,41 @@
+section#sides {
+  padding: 60px 0;
+  border-bottom: 8px solid #7cd997;
+}
+
+section#sides h2 {
+  font-size: 38px;
+  color: #ee8040;
+  margin-bottom: 60px;
+}
+
+section#sides .sides-item {
+  text-align: center;
+}
+
+section#sides .sides-item + .sides-item {
+  border-top: 1px solid #cfcfcf;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+section#sides .sides-item p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+section#sides .sides-item + .sides-item p {
+  color: #7cd997;
+}
+
+section#sides .sides-item ul {
+  text-align: left;
+}
+
+section#sides .sides-item ul li {
+  font-weight: bold;
+}
+
+section#sides .sides-item ul li + li {
+  margin-top: 20px;
+}

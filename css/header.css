@@ -1,0 +1,121 @@
+header#introduction {
+  background: #69d388;
+  padding: 100px 0;
+  border-bottom: 9px solid #ee8040;
+}
+
+header#introduction .logo {
+  max-width: 80px;
+}
+
+header#introduction h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-top: 30px;
+}
+
+header#introduction h3 {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 30px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 8px 0;
+}
+
+header#introduction p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 40px;
+}
+
+header#introduction .credit-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header#introduction .credit-card img {
+  position: absolute;
+  padding: 40px 0;
+  max-width: 270px;
+}
+
+header#introduction .credit-card .card-food {
+  left: 40%;
+  top: 20px;
+  transform: translate3d(-50%, 0, 0);
+}
+
+header#introduction .credit-card img.card-meal {
+  right: 0;
+  top: 55%;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* MOBILE AND TABLETS MAX 550px */
+@media screen and (max-width: 550px) {
+  header#introduction .credit-card {
+    display: none;
+  }
+}
+
+/* MOBILE AND TABLETS 770PX */
+@media screen and (min-width: 550px) and (max-width: 770px) {
+  header#introduction .credit-card {
+    position: relative;
+    height: 300px;
+  }
+
+  header#introduction .credit-card .card-food {
+    left: 40%;
+    top: 20px;
+    transform: translate3d(-50%, 0, 0);
+  }
+  
+  header#introduction .credit-card img.card-meal {
+    right: 30px;
+    top: 80%;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+/* DESKTOPS AND TABLETS 990PX */
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  header#introduction {
+    padding: 60px 0;
+  }
+
+  header#introduction h1 {
+    font-size: 32px;
+  }
+
+  header#introduction h3 {
+    font-size: 18px;
+  }
+
+  header#introduction p {
+    font-size: 14px;
+  }
+
+  header#introduction .credit-card img {
+    max-width: 220px;
+  }
+
+  header#introduction .credit-card img.card-meal {
+    right: 0;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+/* DESKTOPS > 1220PX */
+@media screen and (max-width: 1200px) {
+  header#introduction .credit-card .card-food {
+    left: 30%;
+    top: 20px;
+    transform: translate3d(-50%, 0, 0);
+  }
+}

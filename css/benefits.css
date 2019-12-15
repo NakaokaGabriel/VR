@@ -1,0 +1,128 @@
+section#benefits {
+  margin-top: 30px;
+  margin-bottom: -100px;
+}
+
+section#benefits h2 {
+  font-size: 30px;
+  color: #ee8040;
+  margin-bottom: 40px;
+}
+
+section#benefits .benefits-valor + .benefits-valor  {
+  margin-top: 40px;
+  border-top: 1px solid #cfcfcf;
+  padding-top: 40px;
+}
+
+section#benefits .benefits-valor .benefits-item h5 {
+  font-size: 20px;
+  color: #69d388;
+  font-weight: 700;
+}
+
+section#benefits .benefits-valor:nth-of-type(2) .benefits-item h5 {
+  color: #f2a580;
+}
+
+section#benefits .benefits-valor .benefits-item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+section#benefits .benefits-box {
+  transform: translate3d(0, -25%, 0);
+}
+
+section#benefits .benefits-box .benefits-white-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid #69d388;
+}
+
+section#benefits .benefits-box .benefits-white-box > strong {
+  color: #ee8040;
+  font-size: 22px;
+}
+
+section#benefits .benefits-box .benefits-white-box > p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form {
+  margin-top: 30px;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise label {
+  font-size: 14px;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise input {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 12px 0 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #e7e7e7;
+  font-size: 14px;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise input[type="radio"] {
+  background: transparent;
+  border: 2px solid #999;
+}
+
+section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise button {
+  display: block;
+  width: 100%;
+  background: #ee8040;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  section#benefits {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  section#benefits .benefits-box {
+    transform: translate3d(0, 0, 0);
+    margin: 20px 0;
+    order: 0;
+  }
+
+  section#benefits .benefits-valor .benefits-item h5 {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  section#benefits h2 {
+    font-size: 22px;
+  }
+
+  section#benefits .benefits-valor .benefits-item img {
+    max-width: 80px;
+  }
+
+  section#benefits .benefits-valor .benefits-item h5 {
+    font-size: 16px;
+  }
+    
+  section#benefits .benefits-valor .benefits-item p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
