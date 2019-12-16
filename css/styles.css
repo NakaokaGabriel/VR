@@ -1,4 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700&display=swap'); */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-weight: bold;
+}
 
 * {
   padding: 0;
