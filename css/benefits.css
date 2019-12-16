@@ -9,32 +9,42 @@ section#benefits h2 {
   margin-bottom: 40px;
 }
 
-section#benefits .benefits-valor + .benefits-valor  {
+section#benefits 
+.benefits-valor + .benefits-valor  {
   margin-top: 40px;
   border-top: 1px solid #cfcfcf;
   padding-top: 40px;
 }
 
-section#benefits .benefits-valor .benefits-item h5 {
+section#benefits 
+.benefits-valor 
+.benefits-item h5 {
   font-size: 20px;
   color: #69d388;
   font-weight: 700;
 }
 
-section#benefits .benefits-valor:nth-of-type(2) .benefits-item h5 {
+section#benefits 
+.benefits-valor:nth-of-type(2) 
+.benefits-item h5 {
   color: #f2a580;
 }
 
-section#benefits .benefits-valor .benefits-item p {
+section#benefits 
+.benefits-valor 
+.benefits-item p {
   font-size: 16px;
   margin-top: 5px;
 }
 
-section#benefits .benefits-box {
+section#benefits 
+.benefits-box {
   transform: translate3d(0, -25%, 0);
 }
 
-section#benefits .benefits-box .benefits-white-box {
+section#benefits 
+.benefits-box 
+.benefits-white-box {
   background: #fff;
   border-radius: 10px;
   padding: 30px;
@@ -42,31 +52,245 @@ section#benefits .benefits-box .benefits-white-box {
   border: 2px solid #69d388;
 }
 
-section#benefits .benefits-box .benefits-white-box > strong {
+section#benefits 
+.benefits-box 
+.benefits-white-box > strong {
   color: #ee8040;
   font-size: 22px;
 }
 
-section#benefits .benefits-box .benefits-white-box > p {
+section#benefits 
+.benefits-box 
+.benefits-white-box > p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-section#benefits .benefits-box .benefits-white-box .benefits-form {
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form {
   margin-top: 30px;
 }
 
-section#benefits .benefits-box .benefits-white-box .benefits-form p {
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form p {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise label {
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.benefits-types
+.person-type
+input[type=radio] {
+  display: none;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.benefits-types
+.person-type
+input[type=radio] + label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.benefits-types
+.person-type
+input[type=radio] + label::before {
+  content: '';
+  border: 1px solid #a2a2a2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.benefits-types
+.person-type
+input[type=radio]:checked + label::before {
+  background: #9f9f9f;
+  box-shadow: 0 0 0 2px #ffff, 0 0 0 4px #a2a2a2;
+}
+
+/* PESSOA FISICA */
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose.person {
+  margin-top: 20px;
+  border: 1px solid #dbdbdb;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 40px;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+h6 {
+  color: #ee8040;
+  font-size: 22px;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+p {
+  color: #ee8040;
+  font-size: 14px;
+  font-weight: normal;
+  color: #adadad;
+  margin-top: 20px;
+}
+
+/* PESSOA JURIDICA */
+
+/* TABMENU */
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose {
+  display: none !important;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose.person.active {
+  display: flex !important;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose.active {
+  display: block !important;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.form {
+  display: none !important;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.form.active {
+  display: block !important;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose.enterprise {
+  margin-top: 20px;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.vr-choose {
+  display: flex;
+  justify-content: space-between;
+  background: #f6f6f6;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #e7e7e7;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.vr-choose
+.vr-types input[type=radio] {
+  display: none;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.vr-choose
+.vr-types 
+label {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form
+.types-choose
+.vr-choose
+.vr-types 
+input[type=radio]:checked + label {
+  background: #ee8040;
+  border-radius: 10px;
+  color: #fff;
+}
+
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form 
+.form 
+label {
   font-size: 14px;
 }
 
-section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise input {
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form 
+.form input {
   display: block;
   width: 100%;
   margin: 20px 0;
@@ -76,12 +300,11 @@ section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterpri
   font-size: 14px;
 }
 
-section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise input[type="radio"] {
-  background: transparent;
-  border: 2px solid #999;
-}
-
-section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterprise button {
+section#benefits 
+.benefits-box 
+.benefits-white-box 
+.benefits-form 
+.form button {
   display: block;
   width: 100%;
   background: #ee8040;
@@ -89,6 +312,7 @@ section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterpri
   padding: 12px 0;
   border-radius: 10px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 770px) {
@@ -97,13 +321,16 @@ section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterpri
     text-align: center;
   }
 
-  section#benefits .benefits-box {
+  section#benefits 
+  .benefits-box {
     transform: translate3d(0, 0, 0);
     margin: 20px 0;
     order: 0;
   }
 
-  section#benefits .benefits-valor .benefits-item h5 {
+  section#benefits 
+  .benefits-valor 
+  .benefits-item h5 {
     margin: 20px 0;
   }
 }
@@ -113,16 +340,46 @@ section#benefits .benefits-box .benefits-white-box .benefits-form .form-enterpri
     font-size: 22px;
   }
 
-  section#benefits .benefits-valor .benefits-item img {
+  section#benefits 
+  .benefits-valor 
+  .benefits-item img {
     max-width: 80px;
   }
 
-  section#benefits .benefits-valor .benefits-item h5 {
+  section#benefits 
+  .benefits-valor 
+  .benefits-item h5 {
     font-size: 16px;
   }
     
-  section#benefits .benefits-valor .benefits-item p {
+  section#benefits 
+  .benefits-valor 
+  .benefits-item p {
     font-size: 14px;
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  section#benefits 
+  .benefits-box 
+  .benefits-white-box 
+  .benefits-form
+  .types-choose.person {
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    height: 430px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  section#benefits 
+  .benefits-box 
+  .benefits-white-box 
+  .benefits-form
+  .types-choose
+  .vr-choose {
+    display: block;
   }
 }

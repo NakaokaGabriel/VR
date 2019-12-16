@@ -91,36 +91,62 @@
               <p>Envie seus dados e entraremos em contato.</p>
               <div class="benefits-form">
                 <p>Escolha uma das opções abaixo:</p>
-                <div class="benefits-choose">
+                <div class="benefits-types">
                   <div class="person-type">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <input type="radio" name="person-type" id="physical">
                         <label for="physical">Pessoa Física</label>
                       </div>
-                      <div class="col-md-6">
-                        <input type="radio" name="person-type" id="juridical">
+                      <div class="col-6">
+                        <input type="radio" checked name="person-type" id="juridical">
                         <label for="juridical">Pessoa jurídica</label>
                       </div>
                     </div>
                   </div>
-                  <div class="enterprise-type">
-                    <div class="select">
-                      <div class="value">
-                        <input type="radio" id="">
-                      </div>
+                </div>
+                <!-- PESSOA FISICA -->
+                <div class="types-choose person">
+                  <h6>Benefício EXCLUSIVO para empresas ou estabelecimentos.</h6>
+                  <p>
+                    Caso você seja responsável por uma empresa e queira CONTRATAR
+                    Vale Alimentação ou Vale Refeição para seus funcionários, 
+                    ou queira ACEITAR VR no seu estabelecimento, clique
+                    em Pessoa Jurídica.
+                  </p>
+                </div>
+                <!-- PESSOA JURIDICA -->
+                <div class="types-choose enterprise">
+                  <div class="vr-choose">
+                    <div class="vr-types">
+                      <input type="radio" checked name="vr-types" id="enterprise">
+                      <label for="enterprise">Contratar VR empresa</label>
+                    </div>
+                    <div class="vr-types">
+                      <input type="radio" name="vr-types" id="establishment">
+                      <label for="establishment">aceitar VR estabelecimento</label>
                     </div>
                   </div>
+                  <form class="form enterprise">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome da empresa">
+                    <input type="text" placeholder="Nome do contato">
+                    <input type="tel" placeholder="Telefone comercial">
+                    <input type="tel" placeholder="Telefone celular">
+                    <input type="text" class="number" placeholder="Número de funcionários">
+                    <input type="text" placeholder="CNPJ">
+                    <button type="submit"><strong>Contratar VR</strong> para minha empresa</button>
+                  </form>
+                  <form class="form establishment">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome da empresa">
+                    <input type="text" placeholder="Nome do contato">
+                    <input type="tel" placeholder="Telefone comercial">
+                    <input type="tel" placeholder="Telefone celular">
+                    <input type="text" placeholder="CNPJ">
+                    <button type="submit"><strong>ACEITAR VR</strong> NO MEU ESTABELECIMENTO</button>
+                  </form>
                 </div>
-                <form class="form-enterprise">
-                  <input type="email" placeholder="E-mail">
-                  <input type="text" placeholder="Nome da empresa">
-                  <input type="text" placeholder="Nome do contato">
-                  <input type="tel" placeholder="Telefone comercial">
-                  <input type="tel" placeholder="Telefone celular">
-                  <input type="text" placeholder="CNPJ">
-                  <button type="submit"><strong>ACEITAR VR</strong> NO MEU ESTABELECIMENTO</button>
-                </form>
               </div>
             </div>
           </div>
@@ -340,6 +366,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/tabmenu.js"></script>
 </body>
 
 </html>
